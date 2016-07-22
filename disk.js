@@ -79,7 +79,7 @@ const disk = (...segments) => {
       if (!_type) return
 
       if (this.file) return (cache[p] = _fs.readFileSync(this.path))
-      if (this.directory) return (cache[p] = _fs.readdirSync(this.path).map(i => path.resolve(this.path, i)))
+      if (this.directory) return (cache[p] = _fs.readdirSync(this.path).map((i) => path.resolve(this.path, i)))
 
       throw new Error(`Cannot get value of '${String(_type)}'`)
     }
@@ -91,7 +91,7 @@ Object.defineProperty(disk, 'cache', {
   get: () => cache
 })
 Object.defineProperty(disk, 'clearCache', {
-  value: () => cache = {}
+  value: () => (cache = {})
 })
 
 disk.path = Symbol('path')

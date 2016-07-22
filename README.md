@@ -1,5 +1,6 @@
 d!
 ===
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ES6 Proxies enable us to do fun wacky things.
 
