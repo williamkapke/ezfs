@@ -1,0 +1,29 @@
+{
+  "name": "d!",
+  "version": "1.0.0",
+  "description": "Create/Read/Delete files and directories like they are JavaScript objects!",
+  "main": "disk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamkapke/disk.git"
+  },
+  "keywords": [
+    "ES6",
+    "ES2015",
+    "Proxy",
+    "file",
+    "directory"
+  ],
+  "author": "William Kapke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williamkapke/disk/issues"
+  },
+  "homepage": "https://github.com/williamkapke/disk#readme",
+  "devDependencies": {
+    "standard": "^7.1.2"
+  }
+}
