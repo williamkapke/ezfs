@@ -1,4 +1,4 @@
-fs!
+d!
 ===
 
 ES6 Proxies enable us to do fun wacky things.
@@ -9,6 +9,11 @@ This module lets you access the file system as if it were JavaScript objects!
 simple as a proof-of-concept. `rimraf` and `mkdirp` could probably be used to make it compatible.
 PR welcome ;)
 
+```bash
+npm install d!
+```
+
+How do you use this?
 
 ```javascript
 const disk = require('d!')
