@@ -1,5 +1,3 @@
-d!
-===
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ES6 Proxies enable us to do fun wacky things.
@@ -11,14 +9,14 @@ simple as a proof-of-concept. `rimraf` and `mkdirp` could probably be used to ma
 PR welcome ;)
 
 ```bash
-npm install d!
+npm install ezfs
 ```
 
 How do you use this?
 
 ```javascript
-const disk = require('d!')
-const root = disk(__dirname)
+const ezfs = require('ezfs')
+const root = ezfs(__dirname)
 root.foo.bar.baz.qux = 'ES6 is freakin neeto!'
 // go check your disk- You'll find the full directory tree and a file named `qux`
 
@@ -53,19 +51,23 @@ for(let item of root)
   console.log(item)
 
 // want to get the resolved path? Use the `fs2.path` Symbol...
-console.log(root['foo/bar/baz/qux'][disk.path])
+console.log(root['foo/bar/baz/qux'][ezfs.path])
 // /Users/williamkapke/Desktop/node/fs!/data/foo/bar/baz/qux
 
 // Directory lists and files contents are cached.
 // This can be a really bad thing :/ Look at our cache:
 console.log('\nbefore clear:')
-console.log(disk.cache)
+console.log(ezfs.cache)
 
 // Certainly problematic to keep references like this. Let's clear it...
-disk.clearCache()
+ezfs.clearCache()
 console.log('\nafter clear:')
-console.log(disk.cache)
+console.log(ezfs.cache)
 // {}
 
 ```
 
+License
+=======
+
+MIT
