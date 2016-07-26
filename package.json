@@ -1,6 +1,6 @@
 {
   "name": "ezfs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create/Read/Delete files and directories like they are JavaScript objects!",
   "main": "ezfs.js",
   "scripts": {
